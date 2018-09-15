@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {fontSettings, DisplayContext} from './context/DisplayContext'
+import {settings, DisplayContext} from './context/DisplayContext'
 import PageContainer from './components/PageContainer'
 import { Toolbar } from './components/Toolbar'
 
@@ -10,18 +10,18 @@ class App extends Component {
     super(props)
 
     this.state = {
-      fontSetting: fontSettings["serif"],
-      togglefontSetting: this.togglefontSetting
+      setting: settings["serif"],
+      togglesetting: this.togglesetting
     }
 
   }
 
-  togglefontSetting = (event) => {
+  togglesetting = (event) => {
 
-      let s = fontSettings
+      let s = settings
       let selection = event.target.value
       this.setState({
-        fontSetting: s[selection]
+        setting: s[selection]
       })
     }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const fontSettings = {
+export const settings = {
   sans: {
     fontFamily: "Helvetica"
   },
@@ -12,7 +12,8 @@ export const fontSettings = {
   }
 }
 
+
 export const DisplayContext = React.createContext({
-  fontSetting: fontSettings.serif,
-  togglefontSetting: () => {}
+  setting: settings.serif,
+  togglesetting: () => {}
 })

@@ -1,19 +1,19 @@
 import React from 'react'
-import {fontSettings, DisplayContext} from '../context/DisplayContext'
+import {settings, DisplayContext} from '../context/DisplayContext'
 
 export function Toolbar () {
   //
   // render()
-    const fontSettingKeys = Object.keys(fontSettings)
+    const settingKeys = Object.keys(settings)
 
     return (
       <DisplayContext.Consumer>
-      {({fontSetting, togglefontSetting}) => (
+      {({setting, togglesetting}) => (
         <form>
         <label>Choose font</label>
-        <select onChange={togglefontSetting}>
+        <select onChange={togglesetting}>
             return <option value="">Select..</option>
-          {fontSettingKeys.map((k) => {
+          {settingKeys.map((k) => {
             return <option value={k}>{k}</option>
           })}
         </select>
