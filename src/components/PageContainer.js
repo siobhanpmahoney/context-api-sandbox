@@ -1,5 +1,5 @@
 import React from 'react'
-import PageContent from './PageContent'
+import {PageContent} from './PageContent'
 import {Toolbar} from './Toolbar'
 import {settings, DisplayContext} from '../context/DisplayContext'
 
