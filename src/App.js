@@ -19,16 +19,7 @@ class App extends Component {
   toggleSetting = (event) => {
 
       let s = settings
-
       let selection = event.target.value
-      console.log("in toggleSettings, state before update")
-      console.log(this.state.setting)
-      console.log("in toggleSetting, selection")
-      console.log(event.target.value)
-      console.log("in toggleSettings, settings")
-      console.log(settings)
-      console.log("in toggleSettings settings[selection]")
-      console.log(s[selection])
       this.setState({
         setting: s[selection]
       })
