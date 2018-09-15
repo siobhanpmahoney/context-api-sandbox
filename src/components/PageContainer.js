@@ -1,7 +1,7 @@
 import React from 'react'
 import {PageContent} from './PageContent'
 import {Toolbar} from './Toolbar'
-import {settings, DisplayContext} from '../context/DisplayContext'
+import {fontSettings, DisplayContext} from '../context/DisplayContext'
 
 class PageContainer extends React.Component {
   render() {

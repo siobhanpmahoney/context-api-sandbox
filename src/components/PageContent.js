@@ -1,13 +1,13 @@
 import React from 'react'
-import {settings, DisplayContext} from '../context/DisplayContext'
+import {fontSettings, DisplayContext} from '../context/DisplayContext'
 
 
 // export function PageContent() {
 //   // render() {
 //   return (
 //     <DisplayContext.Consumer>
-//       {({setting, toggleSetting}) => (
-//         <div style={{fontFamily: setting.fontFamily}}>
+//       {({fontSetting, togglefontSetting}) => (
+//         <div style={{fontFamily: fontSetting.fontFamily}}>
 //           <h1>Learning Context Api </h1>
 //           <h2> Part 1: The Basics </h2>
 //         </div>
@@ -21,8 +21,8 @@ export const PageContent = () => {
   // render() {
   return (
     <DisplayContext.Consumer>
-      {({setting, toggleSetting}) => (
-        <div style={{fontFamily: setting.fontFamily}}>
+      {({fontSetting, togglefontSetting}) => (
+        <div style={{fontFamily: fontSetting.fontFamily}}>
           <h1>Learning Context Api </h1>
           <h2> Part 1: The Basics </h2>
         </div>
@@ -37,8 +37,8 @@ export const PageContent = () => {
 //   render() {
 //   return (
 //     <DisplayContext.Consumer>
-//       {({setting, toggleSetting}) => (
-//         <div style={{fontFamily: setting.fontFamily}}>
+//       {({fontSetting, togglefontSetting}) => (
+//         <div style={{fontFamily: fontSetting.fontFamily}}>
 //           <h1>Learning Context Api </h1>
 //           <h2> Part 1: The Basics </h2>
 //         </div>
