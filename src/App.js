@@ -8,17 +8,6 @@ import { Toolbar } from './components/Toolbar'
 class App extends Component {
   constructor(props) {
     super(props)
-    //
-    // this.toggleSetting = (event) => {
-    //     console.log(event.target.value)
-    //     console.log(settings)
-    //     let s = settings
-    //
-    //     let selection = event.target.value
-    //     this.setState(state => ({
-    //       setting: s[selection]
-    //     }))
-    //   }
 
     this.state = {
       setting: settings["serif"],
